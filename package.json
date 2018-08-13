@@ -1,0 +1,22 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "control.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxito3/privateChainTrace.git"
+  },
+  "author": "yapie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxito3/privateChainTrace/issues"
+  },
+  "homepage": "https://github.com/mxito3/privateChainTrace#readme",
+  "dependencies": {
+    "web3": "^0.20.0"
+  }
+}
