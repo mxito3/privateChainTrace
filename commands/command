@@ -1,0 +1,22 @@
+新建账户：
+	personal.newAccount("123456")
+解锁:
+	personal.unlockAccount(eth.coinbase,"domore0325",10000000)
+	personal.unlockAccount(eth.coinbase,"123456",10000000)
+打开：
+	geth --datadir node1/data --networkid 2333 --port 10001 --ipcdisable --rpc --rpccorsdomain "*"  --rpcapi "personal,db,eth,net,web3,miner,admin" --rpcaddr 0.0.0.0 --rpcport 8545
+添加节点：
+	admin.addPeer()
+
+添加权限：
+	clique.propose(eth.coinbase,true);	
+
+获得管理员：
+	clique.getSigners()	
+
+[
+"enode://bcee7f6a627086987ab62e80205af4fb489473fd120e0d0b0c0678ee3158567e6e0435aa2355ce1d532a96641ed492f92ec9299e3b479b090117d265b08ad2ae@100.78.75.41:10001",
+"enode://5d21d7312317521b84604059802fc666b248a9e54bfe1197fdfd4e7bd448dbc6aa0f7982e43245f3665e108817872f2310b3890464e80c34faa2d9cd13a8c9fb@100.78.75.41:10002",
+"enode://0799acb47fa68e00caff115935365d7b6f33eed1985673b3378243efedb22cd8c0b2a7bb7772ec53359bdd3240c998d2e5db6076371ef0585409195995175faf@100.78.75.41:10003",
+"enode://a8be95e7361a5d9f5d3a08160b3a3bbd125570f2b264648589e7c274cdda443580ee6c089165b60e92d87eb56520b7605859a8d4950923e67b8a712ed444e6cb@100.78.75.41:10004"
+]
