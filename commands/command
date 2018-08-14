@@ -10,7 +10,8 @@
 
 添加权限：
 	clique.propose(eth.coinbase,true);	
-
+取消权限：
+	clique。propose(eth.coinbase,false);
 获得管理员：
 	clique.getSigners()	
 

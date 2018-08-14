@@ -9,7 +9,7 @@ for %%i in (1=2=3=4=5) do (
 	set /a rpcport+=1
 	set /a nodeIndex+=1
 	rem 开启变量延迟之后引用变量用！var！
-	start "node!nodeIndex!" geth --datadir "node!nodeIndex!"/data --mine  --networkid 2333 --port !port! --ipcdisable --rpc --rpccorsdomain "*"  --rpcapi "personal,eth,miner" --rpcaddr 0.0.0.0 --rpcport !rpcport! --cache 200 --cache.gc 4 
+	start "node!nodeIndex!" geth --datadir "node!nodeIndex!"/data  --networkid 2333 --port !port! --ipcdisable --rpc --rpccorsdomain "*"  --rpcapi "admin,clique,debug,eth,miner,net,personal,rpc,txpool,web3" --rpcport !rpcport! --cache 200 --cache.gc 4 
 		)
 
 
